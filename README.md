@@ -11,7 +11,9 @@ This repo is the smallest reproducible test case I could create. Relevant code i
 ```html
 <!-- Both `.wrapper` and `.root` are Flex Containers (`display: flex`) -->
 <div class="wrapper">
+	<!-- This `#root` div will be used as the React mount container -->
 	<div id="root" class="root">
+		<!-- Note the use of existing children in the mount container -->
 		<p>loading...</p>
 	</div>
 </div>
@@ -24,6 +26,12 @@ import DocumentTitle from 'react-document-title';
 
 const App = React.createClass({
 	render() {
+
+		/**
+		 * The click handler on the button isn't called in MS Edge.
+		 *
+		 * When the `<DocumentTitle />` is removed, the click handler is called.
+		 */
 		return (
 			<div>
 				<DocumentTitle title="My Title" />

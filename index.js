@@ -4,6 +4,12 @@ import DocumentTitle from 'react-document-title';
 
 const App = React.createClass({
 	render() {
+
+		/**
+		 * The click handler on the button isn't called in MS Edge.
+		 *
+		 * When the `<DocumentTitle />` is removed, the click handler is called.
+		 */
 		return (
 			<div>
 				<DocumentTitle title="My Title" />
