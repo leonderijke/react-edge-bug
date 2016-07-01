@@ -66,3 +66,10 @@ Using MS Edge:
 3. Remove the `<DocumentTitle />` from the `App` component (`index.js`), reload the page, then click the button: the message is logged to the console.
 4. Add the `DocumentTitle` back. Remove the `<p>loading...</p>` from the page (`index.html`), reload the page, then click the button: the message is logged to the console.
 5. Add it back. Remove the `.wrapper,` line from the page (`index.html`), reload the page, then click the button: the message is logged to the console.
+
+| Using                                                                                         | Works correctly    |
+| --------------------------------------------------------------------------------------------- | ------------------ |
+| DocumentTitle + Nested Flexbox Containers + existing children in React mount container        | :x:                |
+| DocumentTitle + Nested Flexbox Containers + **no** existing children in React mount container | :white_check_mark: |
+| DocumentTitle + **no** Nested Flexbox Containers + existing children in React mount container | :white_check_mark: |
+| **no** DocumentTitle + Nested Flexbox Containers + existing children in React mount container | :white_check_mark: |
