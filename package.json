@@ -1,0 +1,16 @@
+{
+  "name": "react-edge-bug",
+  "version": "0.1.0",
+  "description": "Example exposing a problem of React, some libs and MS Edge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leon de Rijke <leonderijke@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-document-title": "^2.0.2",
+    "react-dom": "^15.1.0"
+  }
+}
