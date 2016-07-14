@@ -1,5 +1,11 @@
 # React MS Edge bug
 
+# Update!
+
+This turned out not to be a problem with React, nor with React Side Effect. I was able to reproduce it in this pen: http://codepen.io/leonderijke/pen/dXJyZK (includes workaround).
+
+## Introduction
+
 In a recent project, I discovered some weird behaviour in MS Edge. I was able to narrow it down to using a combination of React, React Side Effect, nested flexbox containers and existing children in the React container. The issue is this:
 
 **Click handlers aren't called when using the above combination.**
